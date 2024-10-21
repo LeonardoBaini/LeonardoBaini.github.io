@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mi Portafolio</h1>
+</header>
+
+<nav>
+    <a href="#about">Sobre Mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">Sobre Mí</h2>
+    <p>Hola, soy un desarrollador web con experiencia en frontend y backend. Me encanta aprender nuevas tecnologías y crear soluciones eficientes.</p>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="card">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve de un proyecto interesante que he realizado.</p>
+        <a href="proyecto1.html">Ver más</a>
+    </div>
+    <div class="card">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve de otro proyecto realizado.</p>
+        <a href="proyecto2.html">Ver más</a>
+    </div>
+    <div class="card">
+        <h3>Proyecto 3</h3>
+        <p>Descripción breve de otro proyecto interesante.</p>
+        <a href="proyecto3.html">Ver más</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contacto</h2>
+    <p>Puedes contactarme a través del correo: <strong>correo@ejemplo.com</strong></p>
+    <button id="contactButton">Contáctame</button>
+</section>
+
+<footer>
+    <p>© 2024 Mi Portafolio</p>
+</footer>
+
+<script>
+    document.getElementById("contactButton").addEventListener("click", function() {
+        alert("Gracias por tu interés. ¡Pronto me pondré en contacto!");
+    });
+</script>
+
+</body>
+</html>
